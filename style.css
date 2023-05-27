@@ -1,0 +1,86 @@
+body {
+	background-color: aliceblue;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	background-color: rgb(130, 128, 126);
+}
+
+.heading {
+	margin: 35px auto 20px;
+	font-size: 60px;
+}
+
+hr {
+	border-top: 2px solid black;
+	width: 40%;
+	margin-bottom: 55px;
+}
+
+.main {
+	width: 50vw;
+	margin: auto;
+	padding: 30px;
+	border-radius: 5px;
+	background: #7b6c59;
+	color: white;
+	border-radius: 20px;
+}
+
+label {
+	font-size: 20px;
+}
+
+.btn {
+	width: 200px;
+	background: rgb(55, 82, 56) !important;
+	border: 2px solid rgb(55, 82, 56) !important;
+	border-radius: 8px;
+	padding: 10px 20px;
+}
+
+/* .btn-primary {
+	background-color: transparent !important;
+	border-color: transparent !important;
+} */
+
+.btn:hover {
+    background: rgb(50, 68, 51);
+	outline-color: none;
+}
+
+#finalAmount {
+	display: none;
+	margin: 50px auto;
+}
+
+#finalAmount h2 {
+	font-size: 50px;
+}
+
+@media (max-width: 768px) {
+	hr {
+		width: 60%;
+	}
+
+	.main {
+		width: 100%;
+	}
+}
+
+@media (max-width: 400px) {
+	.heading {
+		font-size: 60px;
+	}
+
+	hr {
+		width: 75%;
+	}
+
+	#finalAmount h2,
+	.finalValue {
+		font-size: 40px;
+	}
+}

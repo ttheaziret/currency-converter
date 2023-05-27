@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Currency Converter</title>
+	<link rel="stylesheet"
+		href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="preconnect"
+		href=
+"https://fonts.gstatic.com">
+	<link href=
+"https://fonts.googleapis.com/css2?family=Amiri&family=Lobster&family=Pacifico&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1 class="heading text-center display-2">
+		обмен валют 
+	</h1>
+	<hr>
+	<div class="container">
+		<div class="main">
+			<div class="form-group">
+				<label for="oamount">
+					обменять :
+				</label>
+				<input type="text" class="form-control searchBox" placeholder="0.00" id="oamount">
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text">с</span>
+						</div>
+						<select class="form-control from" id="sel1">
+							<option value="">выбери одну …</option>
+							<option value="USD">USD - UNITED STATES DOLLAR</option>
+							<option value="EUR">EUR - EURO</option>
+							<option value="KGS">SOM - КЫРГЫЗ СОМУ</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="col-sm-6">
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text">на</span>
+						</div>
+						<select class="form-control to" id="sel2">
+							<option value="">выбери одну …</option>
+							<option value="USD">USD - UNITED STATES DOLLAR</option>
+							<option value="EUR">EUR - EURO</option>
+							<option value="KGS">SOM - КЫРГЫЗ СОМУ</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="text-center">
+
+				<button class="btn btn-primary convert m-2" type="submit">
+					обменять
+				</button>
+				<button class="btn btn-primary m-2" onclick="clearVal()">
+					перезагрузить
+				</button>
+			</div>
+
+		</div>
+
+		<div id="finalAmount" class="text-center">
+
+			<h2>конвертированная сумма :
+				<span class="finalValue" style="color: rgb(55, 82, 56);">
+				</span>
+			</h2>
+		</div>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+</html>
